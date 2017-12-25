@@ -10,6 +10,12 @@
 interid = 0;
 
 
+function opt_pages(){
+    // 优化页面结构
+    var left_dom =  $('.components-QuickAnalysis-___style__quickAnalysis___17kn-')[0];
+    left_dom.remove();
+}
+
 
 var refresh_btn = $(".next-btn-medium.next-btn-primary")[0];
 function refreash_(){
@@ -32,6 +38,9 @@ document.addEventListener('keydown', (event) => {
             if (interid ==0){
                 interid = setInterval(refreash_, 1000);
             }
+            else if (keyName == "x"){
+                opt_pages();
+            }
             else{
                 clearInterval(interid);
                 interid = 0;
@@ -40,7 +49,7 @@ document.addEventListener('keydown', (event) => {
 
     // alert(`Combination of ctrlKey + ${keyName}`);
     } else {
-      alert(`Key pressed ${keyName}`);
+    //   alert(`Key pressed ${keyName}`);
     }
   }, false);
   
