@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         python阿里日志刷新
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/vickxxx/monkey_script
 // @version      0.1
 // @description  定时刷新阿里日志输出
 // @author       You
