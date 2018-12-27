@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  定时刷新阿里日志输出
 // @author       You
-// @match        https://sls.console.aliyun.com/next/project/luojilab-logs/logsearch/passport-python*
+// @match        https://sls.console.aliyun.com/next/project/luojilab-logs/logsearch/*
 // @grant        none
 // ==/UserScript==
 interid = 0;
@@ -17,7 +17,7 @@ function opt_pages(){
 }
 
 
-var refresh_btn = $(".next-btn-medium.next-btn-primary")[0];
+var refresh_btn = $(".next-btn.next-btn-primary.next-btn-small")[0];
 function refreash_(){
     refresh_btn.click();
 }
